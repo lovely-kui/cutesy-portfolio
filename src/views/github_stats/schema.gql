@@ -1,0 +1,35 @@
+query getUserData($username: String!) {
+  user(login: $username) {
+    name
+    avatarUrl
+    repositories(
+      first: 100
+      ownerAffiliations: OWNER
+      orderBy: { direction: DESC, field: STARGAZERS }
+    ) {
+      nodes {
+        stargazers {
+          totalCount
+        }
+      }
+    }
+    contributionsCollection {
+      totalCommitContributions
+    }
+    pullRequests(first: 1) {
+      totalCount
+    }
+    openIssues: issues(first: 100, states: OPEN) {
+      totalCount
+    }
+    closedIssues: issues(first: 100, states: CLOSED) {
+      totalCount
+    }
+    repositoriesContributedTo(
+      first: 1
+      contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]
+    ) {
+      totalCount
+    }
+  }
+}

@@ -1,0 +1,18 @@
+name = "cutesy_portfolio"
+version = "0.1.0"
+
+[dependencies]
+gleam_stdlib = "~> 0.30"
+gleam_erlang = "~> 0.23"
+mist = ">= 4.0.7 and < 5.0.0"
+gleam_http = ">= 4.0.0 and < 5.0.0"
+simplifile = ">= 2.2.0 and < 3.0.0"
+wisp = ">= 1.5.3 and < 2.0.0"
+gleam_hackney = ">= 1.3.1 and < 2.0.0"
+gleam_json = ">= 2.3.0 and < 3.0.0"
+radish = ">= 0.16.0 and < 1.0.0"
+dotenv_gleam = ">= 1.0.7 and < 2.0.0"
+envoy = ">= 1.0.2 and < 2.0.0"
+
+[dev-dependencies]
+gleeunit = "~> 1.0"

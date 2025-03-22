@@ -1,0 +1,135 @@
+<svg class="card" width="1380" height="550" viewBox="0 0 1380 550" xmlns="http://www.w3.org/2000/svg" role="img">
+  <image class="card__background" href="data:png;base64,$background" width="1380" height="550"/>
+  <foreignObject width="1380" height="550">
+    <h1 class="card__title">'$user.name''s GitHub Stats</h1>
+    <div class="card__content">
+      <div class="card__avatar">
+        <img class="avatar__source" src="'$user.avatar'" alt="Cutie's Avatar"/>
+        <div class="avatar__frame">'$avatar.frame'</div>
+        <div class="avatar__decor">'$avatar.decor'</div>
+      </div>
+      <table class="content__table">
+        <tr class="table__row">
+          <td class="row__icon">'$icon.star'</td>
+          <td class="row__label">Earned Stars</td>
+          <td class="row__value">: '$user.earned_stars' Shiny Stars</td>
+        </tr>
+        <tr class="table__row">
+          <td class="row__icon">'$icon.commit'</td>
+          <td class="row__label">Commits (2025)</td>
+          <td class="row__value">: '$user.commits' Commits</td>
+        </tr>
+        <tr class="table__row">
+          <td class="row__icon">'$icon.pull_request'</td>
+          <td class="row__label">Pull Requests</td>
+          <td class="row__value">: '$user.pull_requests' Requests</td>
+        </tr>
+        <tr class="table__row">
+          <td class="row__icon">'$icon.issue'</td>
+          <td class="row__label">Total Issues</td>
+          <td class="row__value">: '$user.issues.closed'/'$user.issues.total' Closed Issues</td>
+        </tr>
+        <tr class="table__row">
+          <td class="row__icon">'$icon.repository'</td>
+          <td class="row__label">Contributed to</td>
+          <td class="row__value">: '$user.contributes' Repositories</td>
+        </tr>
+      </table>
+    </div>
+  </foreignObject>
+</svg>
+<style>
+  @font-face {
+    font-family: 'Content';
+    src: url('data:font/ttf;base64,$font.content');
+  }
+  @font-face {
+    font-family: 'Title';
+    src: url('data:font/ttf;base64,$font.title');
+  }
+
+  .card {
+    border-radius: 2.5rem;
+  }
+  .card foreignObject {
+    user-select: none;
+  }
+
+  .card__title {
+    font-family: 'Title', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 1.5rem;
+    color: '$color.title';
+  }
+
+  .card__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card__avatar {
+    margin-left: 2rem;
+  }
+  .content__table {
+    border-collapse: collapse;
+    width: 40rem;
+    height: 25rem;
+  }
+  .content__table .table__row {
+    height: 1rem;
+  }
+
+  .table__row .row__icon {
+    width: 3rem;
+    max-height: 3rem;
+    padding-right: 1rem;
+    fill: '$color.icon';
+  }
+  .table__row .row__label {
+    font-family: 'Content', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: '$color.label';
+  }
+  .table__row .row__value {
+    font-family: 'Content', cursive;
+    font-size: 2.5rem;
+    color: '$color.value';
+  }
+
+  .card__avatar {
+    position: relative;
+    width: 24rem;
+    height: 24rem;
+    margin-right: 12rem;
+    display: flex;
+    margin-top: -1rem;
+    justify-content: center;
+  }
+  .card__avatar .avatar__source {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(50% at 50% 50%);
+  }
+  .card__avatar .avatar__frame {
+    position: absolute;
+    width: 29rem;
+    height: 29rem;
+    top: -2.2rem;
+    opacity: 0.6;
+  }
+  .card__avatar .avatar__decor {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    left: '$decor.poseX';
+    top: '$decor.poseY';
+  }
+  .card__avatar .avatar__frame > svg {
+    fill: '$color.frame';
+  }
+  .card__avatar .avatar__decor > svg {
+    fill: '$color.decor';
+  }
+</style>
