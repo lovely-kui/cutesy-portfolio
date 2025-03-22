@@ -7,12 +7,16 @@
   <a href="#-credits">Credits</a>
 </p>
 
+## ⚠️ THERE'S PROBLEM!!
+Project is not working for now, i failed when deploying on fly.io!! ૮(˶╥︿╥)ა \
+But i will fix it soon i promise!! It's getting too late and i'm sleepy :c
+
 ## 🍓 Key Features
 
 * ୨ৎ Cute Design!!
   - I will continue to draw more icons (˶ᵔᵕᵔ˶)
 * ୨ৎ Font Options
-  - There is lot of *(not too much)* fonts you can see them on [credits](#credits) section 𖹭.ᐟ
+  - There is lot of *(not too much)* fonts you can see them on [credits](#-credits) section 𖹭.ᐟ
 * ୨ৎ Custom Color Schema
   - You are the artist you have the palette, **every color** can be **modified**!! (˵•̀ᴗ-˵) ✧
 * ୨ৎ Background Options
