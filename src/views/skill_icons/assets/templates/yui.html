@@ -1,21 +1,23 @@
-<svg class="icons" width="'$width'" height="'$height'" viewBox="0 0 '$width' '$height'" xmlns="http://www.w3.org/2000/svg" role="img">
-  <foreignObject width="'$width'" height="'$height'">
-    <div class="icons__list">
+<svg class="icons" width="$width" height="$height" viewBox="0 0 $width $height" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <style>
+      .icons__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        max-width: 748px;
+        gap: 2px;
+      }
+
+      .icons__list > svg {
+        width: 3rem;
+        max-height: 3rem;
+      }
+    </style>
+  </defs>
+  <foreignObject width="$width" height="$height">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="icons__list">
       '$icons'
     </div>
   </foreignObject>
 </svg>
-<style>
-  .icons__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: fit-content;
-    max-width: 748px;
-    gap: 2px;
-  }
-
-  .icons__list > svg {
-    width: 3rem;
-    max-height: 3rem;
-  }
-</style>
