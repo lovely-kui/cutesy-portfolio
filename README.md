@@ -7,10 +7,6 @@
   <a href="#-credits">Credits</a>
 </p>
 
-## ❤️‍🩹 Also i found this page on BlueSky and the admin was pretty nice so i wanted to share their page in here as a support (˶ᵔᵕᵔ˶)
-[![image](https://github.com/user-attachments/assets/56b85877-d569-4473-a320-5795fd973334)](https://bsky.app/profile/melvinjr23.bsky.social)
-
-
 ## ⚠️ THERE'S PROBLEM!!
 Only the **Skill Icons** is working for now because i'm having an issue while connecting to Redis which is a database used to optimize **GitHub Stats** ૮(˶╥︿╥)ა
 
