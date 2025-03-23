@@ -7,6 +7,10 @@
   <a href="#-credits">Credits</a>
 </p>
 
+## ❤️‍🩹 Also i found this page on BlueSky and the admin was pretty nice so i wanted to share their page in here as a support (˶ᵔᵕᵔ˶)
+[![image](https://github.com/user-attachments/assets/56b85877-d569-4473-a320-5795fd973334)](https://bsky.app/profile/melvinjr23.bsky.social)
+
+
 ## ⚠️ THERE'S PROBLEM!!
 Project is not working for now, i failed when deploying on fly.io!! ૮(˶╥︿╥)ა \
 But i will fix it soon i promise!! It's getting too late and i'm sleepy :c
@@ -84,7 +88,7 @@ Ah and here's the aviable icons!!
 | Icon ID     | Icon                                                                     |
 |-------------|--------------------------------------------------------------------------|
 | `css`       | <img src="./src/views/skill_icons/assets/icons/css.svg" width="48">      |
-| `haskeell`  | <img src="./src/views/skill_icons/assets/icons/haskell.svg" width="48">  |
+| `haskell`  | <img src="./src/views/skill_icons/assets/icons/haskell.svg" width="48">   |
 | `html`      | <img src="./src/views/skill_icons/assets/icons/html.svg" width="48">     |
 | `java`      | <img src="./src/views/skill_icons/assets/icons/java.svg" width="48">     |
 | `js`        | <img src="./src/views/skill_icons/assets/icons/js.svg" width="48">       |
