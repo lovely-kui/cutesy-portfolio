@@ -11,7 +11,7 @@ RUN cd /build \
   && mkdir -p /app/public \
   && cp -r src/* /app/src/ \
   && cp -r public/* /app/public/ \
-  && cp -r .env /app/ \
+  # && cp -r .env /app/ \ # Add this line on local testing ^-^
   && rm -r /build
 
 # Run the server
