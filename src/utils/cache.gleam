@@ -1,16 +1,12 @@
-import gleam/int
 import radish
 import envoy as env
 
 pub fn connect() {
-  let cache_port = case env.get("CACHE_PORT") {
-    Ok(cache_port) -> case int.parse(cache_port) {
-      Ok(parse) -> parse
-      Error(_) -> 6379
-    }
-    Error(_) -> 6379
+  let redis_url = case env.get("REDIS_URL") {
+    Ok(redis_url) -> redis_url
+    Error(_) -> "redis"
   }
-  let assert Ok(client) = radish.start("redis", cache_port, [
+  let assert Ok(client) = radish.start(redis_url, 6379, [
     radish.Timeout(5000),
     radish.PoolSize(10),
   ])
