@@ -1,11 +1,14 @@
 <p align="center"><img width="280" src="./src/assets/logo.png"/></p>
-<h4 align="center">💞 Prettify your portfolio with stylish designs powered by a <a href="https://gleam.run">glimling</a> backend on <a href="https://fly.io">fly.io</a>!! (for now it works on <a href="https://render.com">render.com</a>!!</h4>
+<h4 align="center">💞 Prettify your portfolio with stylish designs powered by a <a href="gleam.run">glimling</a> backend on <a href="fly.io">fly.io</a>!!</h4>
 <p align="center">
   <a href="#-key-features">Key Features</a> •
   <a href="#-how-to-use">How To Use</a> •
   <a href="#-deploy-yourself">Deploy Yourself</a> •
   <a href="#-credits">Credits</a>
 </p>
+
+## ⚠️ THERE'S PROBLEM!!
+I need to generate a base64 format of the user's avatar from the avtar URL for **GitHub Stats**, but i don't know how to do that for now ther won't be avatars ૮(˶╥︿╥)ა
 
 ## 🍓 Key Features
 
@@ -26,7 +29,7 @@
 
 To make Cutesy Portfolio generate a **GitHub Stats image** follow this!! (づ>v<)づ♡
 ```md
-![My Stats](https://cutesy-portfolio.onrender.com/github-stats/lovely-kui)
+![My Stats](/github-stats/lovely-kui)
 ```
 And that's it, all ready!! See, super **easy** right?? (๑ᵔ⤙ᵔ๑) But let's say you want to **customize**, it's okie no problem!!
 
@@ -36,7 +39,7 @@ Here's the some **parts** of the generated image!!
 You can **control** them by changing the URL, let's say you want to change the **title color**,
 color of the title can be controlled by `tcolor` parameter, if you want to make it pink just do...
 ```md
-![My Stats](https://cutesy-portfolio.onrender.com/github-stats/lovely-kui?tcolor=pink)
+![My Stats](/github-stats/lovely-kui?tcolor=pink)
 ```
 And it will work as you wish, hex colors are also acceptable!! ૮˶ᵔᵕᵔ˶ა
 
@@ -70,7 +73,7 @@ And it will work as you wish, hex colors are also acceptable!! ૮˶ᵔᵕᵔ˶�
 
 To display icons for showcasing your skills you can do it like...
 ```md
-![My Skills](https://cutesy-portfolio.onrender.com/skill-icons?i=html,js,swift,haskell)
+![My Skills](/skill-icons?i=html,js,swift,haskell)
 ```
 For now there is not too much options to customize the icons,
 if you are not happy with this, there is a wonderful project i know!!
@@ -81,10 +84,8 @@ Ah and here's the aviable icons!!
 |-------------|--------------------------------------------------------------------------|
 | `css`       | <img src="./src/views/skill_icons/assets/icons/css.svg" width="48">      |
 | `haskell`  | <img src="./src/views/skill_icons/assets/icons/haskell.svg" width="48">   |
-| `html`      | <img src="./src/views/skill_icons/assets/icons/html.svg" width="48">     |
 | `java`      | <img src="./src/views/skill_icons/assets/icons/java.svg" width="48">     |
 | `js`        | <img src="./src/views/skill_icons/assets/icons/js.svg" width="48">       |
-| `php`       | <img src="./src/views/skill_icons/assets/icons/php.svg" width="48">      |
 | `python`    | <img src="./src/views/skill_icons/assets/icons/python.svg" width="48">   |
 | `react`     | <img src="./src/views/skill_icons/assets/icons/react.svg" width="48">    |
 | `ruby`      | <img src="./src/views/skill_icons/assets/icons/ruby.svg" width="48">     |
