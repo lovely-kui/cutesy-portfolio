@@ -7,8 +7,9 @@
   <a href="#-credits">Credits</a>
 </p>
 
-## ⚠️ THERE'S PROBLEM!!
+## ⚠️ THERE'S A PROBLEM!!
 I need to generate a base64 format of the user's avatar from the avtar URL for **GitHub Stats**, but i don't know how to do that for now ther won't be avatars ૮(˶╥︿╥)ა
+**Update:** Now there is a bigger problem!! I **really really** didn't touch to anything but Render is not deploying my app now >:c
 
 ## 🍓 Key Features
 
