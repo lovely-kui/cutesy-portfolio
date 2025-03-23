@@ -7,15 +7,6 @@
   <a href="#-credits">Credits</a>
 </p>
 
-## ⚠️ THERE'S PROBLEM!!
-Only the **Skill Icons** is working for now because i'm having an issue while connecting to Redis which is a database used to optimize **GitHub Stats** ૮(˶╥︿╥)ა
-
-```log
-Listening on http://0.0.0.0:8000
-==> Your service is live 🎉
-EROR function="connect" line=13 message="Pattern match failed, no pattern matched the value." module="utils/cache" value=Error(WorkerStartError(InitFailed(Abnormal("Unable to connect to Redis server")))) gleam_error=LetAssert class=Errored
-```
-
 ## 🍓 Key Features
 
 * ୨ৎ Cute Design!!
