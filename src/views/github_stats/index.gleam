@@ -1,12 +1,22 @@
+import gleam/http
 import gleam/dict
 import gleam/http/request
 import gleam/list
 import gleam/string
-import gleam/string_tree
 import views/github_stats/fetch
 import utils/load
 import simplifile as fsys
 import wisp.{type Request, type Response}
+
+import gleam/hackney
+
+pub fn url_to_base64(url: String) {
+  let assert Ok(request) = request.to(url)
+  let assert Ok(response) = request
+  |> request.set_method(http.Get)
+  |> hackney.send
+  response.body
+}
 
 pub fn render(request: Request, username) -> Response {
   let assert Ok(path) = fsys.current_directory()
@@ -110,6 +120,7 @@ pub fn render(request: Request, username) -> Response {
   ]) |> dict.fold(template, fn(acc, key, value) {
     string.replace(acc, key, value)
   })
-
-  wisp.html_response(string_tree.from_string(template), 200)
+  wisp.ok()
+  |> wisp.set_header("content-type", "image/svg+xml")
+  |> wisp.string_body(template)
 }
