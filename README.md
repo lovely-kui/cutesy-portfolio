@@ -1,5 +1,5 @@
 <p align="center"><img width="280" src="./src/assets/logo.png"/></p>
-<h4 align="center">💞 Prettify your portfolio with stylish designs powered by a <a href="gleam.run">glimling</a> backend on <a href="fly.io">fly.io</a>!!</h4>
+<h4 align="center">💞 Prettify your portfolio with stylish designs powered by a <a href="https://gleam.run">glimling</a> backend on <a href="https://fly.io">fly.io</a>!! (for now it works on <a href="https://render.com">render.com</a>!!</h4>
 <p align="center">
   <a href="#-key-features">Key Features</a> •
   <a href="#-how-to-use">How To Use</a> •
@@ -12,8 +12,13 @@
 
 
 ## ⚠️ THERE'S PROBLEM!!
-Project is not working for now, i failed when deploying on fly.io!! ૮(˶╥︿╥)ა \
-But i will fix it soon i promise!! It's getting too late and i'm sleepy :c
+Only the **Skill Icons** is working for now because i'm having an issue while connecting to Redis which is a database used to optimize **GitHub Stats** ૮(˶╥︿╥)ა
+
+```log
+Listening on http://0.0.0.0:8000
+==> Your service is live 🎉
+EROR function="connect" line=13 message="Pattern match failed, no pattern matched the value." module="utils/cache" value=Error(WorkerStartError(InitFailed(Abnormal("Unable to connect to Redis server")))) gleam_error=LetAssert class=Errored
+```
 
 ## 🍓 Key Features
 
@@ -34,7 +39,7 @@ But i will fix it soon i promise!! It's getting too late and i'm sleepy :c
 
 To make Cutesy Portfolio generate a **GitHub Stats image** follow this!! (づ>v<)づ♡
 ```md
-![My Stats](/github-stats/lovely-kui)
+![My Stats](https://cutesy-portfolio.onrender.com/github-stats/lovely-kui)
 ```
 And that's it, all ready!! See, super **easy** right?? (๑ᵔ⤙ᵔ๑) But let's say you want to **customize**, it's okie no problem!!
 
@@ -44,7 +49,7 @@ Here's the some **parts** of the generated image!!
 You can **control** them by changing the URL, let's say you want to change the **title color**,
 color of the title can be controlled by `tcolor` parameter, if you want to make it pink just do...
 ```md
-![My Stats](/github-stats/lovely-kui?tcolor=pink)
+![My Stats](https://cutesy-portfolio.onrender.com/github-stats/lovely-kui?tcolor=pink)
 ```
 And it will work as you wish, hex colors are also acceptable!! ૮˶ᵔᵕᵔ˶ა
 
@@ -78,7 +83,7 @@ And it will work as you wish, hex colors are also acceptable!! ૮˶ᵔᵕᵔ˶�
 
 To display icons for showcasing your skills you can do it like...
 ```md
-![My Skills](/skill-icons?i=html,js,swift,haskell)
+![My Skills](https://cutesy-portfolio.onrender.com/skill-icons?i=html,js,swift,haskell)
 ```
 For now there is not too much options to customize the icons,
 if you are not happy with this, there is a wonderful project i know!!
