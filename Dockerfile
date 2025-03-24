@@ -1,6 +1,5 @@
 FROM ghcr.io/gleam-lang/gleam:v1.9.1-erlang-alpine
 
-RUN gleam build
 # Add project code
 COPY . /build/
 
