@@ -7,11 +7,6 @@ COPY . /build/
 RUN cd /build \
   && gleam export erlang-shipment \
   && mv build/erlang-shipment /app \
-  && mkdir -p /app/src \
-  && mkdir -p /app/public \
-  && cp -r src/* /app/src/ \
-  && cp -r public/* /app/public/ \
-  && cp -r .env /app/ \
   && rm -r /build
 
 # Run the server
