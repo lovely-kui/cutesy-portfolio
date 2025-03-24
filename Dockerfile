@@ -4,17 +4,14 @@ FROM ghcr.io/gleam-lang/gleam:v1.9.1-erlang-alpine
 COPY . /build/
 
 # Compile the project and copy assets
-RUN cd /build \
+RUN mkdir -p /app/build && cd /app/build \
     && gleam export erlang-shipment \
-    && ls -R /build \
-    && mv build/erlang-shipment /app \
-    && ls -R /app \
-    && mkdir -p /app/src \
-    && mkdir -p /app/public \
+    && mv erlang-shipment /app \
+    && mkdir -p /app/src /app/public \
     && cp -r src/* /app/src/ \
     && cp -r public/* /app/public/ \
     && cp -r .env /app/ \
-    && rm -r /build
+    && rm -r /app/build
 
 # Run the server
 WORKDIR /app
