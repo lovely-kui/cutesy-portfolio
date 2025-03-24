@@ -5,14 +5,16 @@ COPY . /build/
 
 # Compile the project and copy assets
 RUN cd /build \
-  && gleam export erlang-shipment \
-  && mv build/erlang-shipment /app \
-  && mkdir -p /app/src \
-  && mkdir -p /app/public \
-  && cp -r src/* /app/src/ \
-  && cp -r public/* /app/public/ \
-  && cp -r .env /app/ \
-  && rm -r /build
+    && gleam export erlang-shipment \
+    && ls -R /build \
+    && mv build/erlang-shipment /app \
+    && ls -R /app \
+    && mkdir -p /app/src \
+    && mkdir -p /app/public \
+    && cp -r src/* /app/src/ \
+    && cp -r public/* /app/public/ \
+    && cp -r .env /app/ \
+    && rm -r /build
 
 # Run the server
 WORKDIR /app
