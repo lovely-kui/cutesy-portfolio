@@ -124,7 +124,24 @@ You don't know how to get your tokens?? There is a [documentation](https://docs.
 
 ### 💖 Run
 
-You can run the project by `docker-compose up --build` command, when it's ready visit the "http://127.0.0.1:8000" on your browser!!
+Before we run the project we need to create a file named `docker-compose.yml` in root, this is for creating another container to run Redis locally!!
+```yml
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    environment:
+      REDIS_URL: redis://redis:6379
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+```
+
+Now you can run the project by `docker-compose up --build` command, when it's ready visit the "http://127.0.0.1:8000" on your browser!!
 I don't think i need to explain all the details just know that Cutesy Portfolio uses [Redis](https://redis.io/) as a cache!!
 So if you are not running Redis locally, process will crash when `gleam run` used instead, that's why we need that lovely whale!! 🐳
 
