@@ -96,8 +96,8 @@
   </defs>
   <image class="card__background" href="data:png;base64,$background" width="1380" height="550"/>
   <foreignObject width="1380" height="550">
-    <h1 class="card__title">'$user.name''s GitHub Stats</h1>
-    <div class="card__content">
+    <h1 xmlns="http://www.w3.org/1999/xhtml" class="card__title">'$user.name''s GitHub Stats</h1>
+    <div xmlns="http://www.w3.org/1999/xhtml" class="card__content">
       <table class="content__table">
         <tr class="table__row">
           <td class="row__icon">'$icon.star'</td>
@@ -126,6 +126,7 @@
         </tr>
       </table>
       <div class="card__avatar">
+        <img class="avatar__source" xmlns="http://www.w3.org/1999/xhtml" src="'$user.avatar'" alt="Cutie's Avatar" />
         <div class="avatar__frame">'$avatar.frame'</div>
         <div class="avatar__decor">'$avatar.decor'</div>
       </div>
